@@ -6,7 +6,7 @@ local ts = game:GetService("TweenService")
 
 -- GUI chính
 local screenGui = Instance.new("ScreenGui", game.CoreGui)
-screenGui.Name = "WOKINGLOG_PvPMenu"
+screenGui.Name = "thanhtai_PvPMenu"
 
 -- Frame menu
 local frame = Instance.new("Frame", screenGui)
@@ -23,7 +23,7 @@ frame.Visible = false
 local title = Instance.new("TextLabel", frame)
 title.Size = UDim2.new(1, 0, 0, 40)
 title.BackgroundColor3 = Color3.fromRGB(60, 0, 0)
-title.Text = "Thanh Tài menu pvp"
+title.Text = "thanh tài 💤"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.FredokaOne
 title.TextSize = 20
@@ -43,7 +43,7 @@ local openBtn = Instance.new("TextButton", screenGui)
 openBtn.Size = UDim2.new(0, 40, 0, 40)
 openBtn.Position = UDim2.new(0, 20, 0.5, -20)
 openBtn.BackgroundColor3 = Color3.fromRGB(60, 0, 0)
-openBtn.Text = ":))"
+openBtn.Text = "❤️‍🔥"
 openBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 openBtn.Font = Enum.Font.FredokaOne
 openBtn.TextSize = 24
@@ -97,7 +97,7 @@ local function createToggle(name, callback)
 	local state = false
 	btn.MouseButton1Click:Connect(function()
 		state = not state
-		btn.Text = name .. ": " .. (state and "Bật " or "Tắt ")
+		btn.Text = name .. ": " .. (state and "Bật ✔️" or "Tắt ❌")
 		callback(state)
 	end)
 end
